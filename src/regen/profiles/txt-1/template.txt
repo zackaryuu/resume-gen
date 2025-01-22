@@ -11,6 +11,18 @@ $endif$
 $if(info.address)$
 Address: $info.address$  
 $endif$
+$if(info.homepage)$
+Homepage: $info.homepage$  
+$endif$
+$if(info.github)$
+GitHub: $info.github$  
+$endif$
+$if(info.gitlab)$
+GitLab: $info.gitlab$  
+$endif$
+$if(info.linkedin)$
+LinkedIn: $info.linkedin$  
+$endif$
 
 # Summary
 $if(profile.summary)$
@@ -29,7 +41,6 @@ $if(qual)$
 $for(qual)$
 Title: $qual.title$  
 $if(qual.items)$
-- Items:
 $for(qual.items)$
     - $qual.items$
 $endfor$
@@ -71,7 +82,6 @@ Name: $project.name$ - Type: $project.type$
 Position: $project.position$  
 Duration: $project.datestart$ - $project.dateend$  
 $if(project.items)$
-- Details:
 $for(project.items)$
     - $project.items$
 $endfor$
@@ -84,7 +94,6 @@ Other Notable Projects
 $for(projectl.items)$
 Title: $projectl.title$  
 $if(projectl.items)$
-- Honors:
 $for(projectl.items)$
     - $projectl.items.name$: $projectl.items.des$ ($projectl.items.location$, $projectl.items.year$)
 $endfor$
@@ -114,7 +123,6 @@ Degree: $edu.degree$ from $edu.institution$
 Location: $edu.location$  
 Duration: $edu.datestart$ - $edu.dateend$  
 $if(edu.items)$
-- Details:
 $for(edu.items)$
     - $edu.items$
 $endfor$
