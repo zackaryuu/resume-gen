@@ -16,10 +16,6 @@ def cli(preset, profile, data, example, output):
     click.echo(f"Preset: {preset}")
     click.echo(f"Profile: {profile}")
 
-    if output:
-        os.makedirs(output, exist_ok=True)
-        os.chdir(output)
-
     currentCwd = os.path.abspath(os.getcwd())
     click.echo(f"Current working directory: {currentCwd}")
 
@@ -43,6 +39,10 @@ def cli(preset, profile, data, example, output):
             data_toml = EXAMPLE_TOML
 
     click.echo(f"Data file: {data_toml}")
+
+    if output:
+        os.makedirs(output, exist_ok=True)
+        currentCwd = output
 
     oprun(preset, currentCwd, os.path.join(PROFILE_PATH, profile), data_toml)
 
