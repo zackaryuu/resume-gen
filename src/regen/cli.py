@@ -16,9 +16,6 @@ def cli(preset, profile, data, example, output):
     click.echo(f"Preset: {preset}")
     click.echo(f"Profile: {profile}")
 
-    currentCwd = os.path.abspath(os.getcwd())
-    click.echo(f"Current working directory: {currentCwd}")
-
     # find data.toml in currentCwd, if not find the first .toml 
     if example:
         data_toml = EXAMPLE_TOML
@@ -28,6 +25,9 @@ def cli(preset, profile, data, example, output):
         click.echo(f"Data file {data_toml} is not a .toml file, exiting.")
         return
     
+    currentCwd = os.path.abspath(os.getcwd())
+    click.echo(f"Current working directory: {currentCwd}")
+
     if data_toml is None:
         data_toml = os.path.join(currentCwd, "data.toml")
         
@@ -38,11 +38,14 @@ def cli(preset, profile, data, example, output):
             click.echo("No data.toml found in current directory, using example.toml.")
             data_toml = EXAMPLE_TOML
 
+    data_toml = os.path.abspath(data_toml)
+
     click.echo(f"Data file: {data_toml}")
 
     if output:
         os.makedirs(output, exist_ok=True)
-        currentCwd = output
+        os.chdir(output)
+        currentCwd = os.path.abspath(os.getcwd())
 
     oprun(preset, currentCwd, os.path.join(PROFILE_PATH, profile), data_toml)
 
