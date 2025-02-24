@@ -11,10 +11,10 @@
 
 -e file:.
 click==8.1.8
-    # via resume-gen
+    # via zs-resume-gen
 colorama==0.4.6
     # via click
 pyyaml==6.0.2
-    # via resume-gen
+    # via zs-resume-gen
 toml==0.10.2
-    # via resume-gen
+    # via zs-resume-gen

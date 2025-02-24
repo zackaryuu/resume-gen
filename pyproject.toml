@@ -14,7 +14,7 @@ readme = "README.md"
 requires-python = ">= 3.8"
 
 [project.scripts]
-resume-gen = "regen.cli:cli"
+"zs.resume-gen" = "regen.cli:cli"
 
 [build-system]
 requires = ["hatchling"]
@@ -23,7 +23,7 @@ build-backend = "hatchling.build"
 [tool.rye]
 managed = true
 dev-dependencies = [
-    "zs @ git+https://github.com/z2u4/zs.git",
+    "zuu>=7.0.0",
 ]
 
 [tool.hatch.metadata]

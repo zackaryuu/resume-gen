@@ -1,11 +1,11 @@
 from functools import cache
 import os
-from zuu.PKG.importlib import import_file
+from zuu.stdext_importlib import import_file
 from regen import PRESET_PATH
-from zuu.STRUCT.DECOR.tempdir import tempdir_op
+from zuu.util_tempdir import tempdir_op
 import toml
 import yaml
-from z2u4.kvstore import parse_document
+from zs.kvstore import parse_document
 
 @cache
 def load_mod(preset):
