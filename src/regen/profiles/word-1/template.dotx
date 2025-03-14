@@ -1,0 +1,85 @@
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+  <w:body>
+    <!-- Personal Information Section -->
+    <w:p>
+      <w:r><w:t># Personal Information</w:t></w:r>
+    </w:p>
+    <w:sdt>
+      <w:sdtPr>
+        <w:alias w:val="FirstName"/>
+        <w:tag w:val="FirstName"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:p><w:r><w:t>[First Name]</w:t></w:r></w:p>
+      </w:sdtContent>
+    </w:sdt>
+    <!-- Repeat similar controls for other personal info fields -->
+    
+    <!-- Summary Section -->
+    <w:p>
+      <w:r><w:t># Summary</w:t></w:r>
+    </w:p>
+    <w:sdt>
+      <w:sdtPr>
+        <w:alias w:val="Summary"/>
+        <w:tag w:val="Summary"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:p><w:r><w:t>[Professional summary text]</w:t></w:r></w:p>
+      </w:sdtContent>
+    </w:sdt>
+
+    <!-- Qualifications Section -->
+    <w:p>
+      <w:r><w:t># Qualifications</w:t></w:r>
+    </w:p>
+    <w:sdt>
+      <w:sdtPr>
+        <w:alias w:val="TopQualifications"/>
+        <w:tag w:val="TopQualifications"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:p><w:r><w:t>- Top Qualifications:</w:t></w:r></w:p>
+        <w:p><w:r><w:t>• [Qualification 1]</w:t></w:r></w:p>
+        <w:p><w:r><w:t>• [Qualification 2]</w:t></w:r></w:p>
+      </w:sdtContent>
+    </w:sdt>
+
+    <!-- Work Experience Section -->
+    <w:p>
+      <w:r><w:t># Work Experience</w:t></w:r>
+    </w:p>
+    <w:sdt>
+      <w:sdtPr>
+        <w:alias w:val="WorkExperience"/>
+        <w:tag w:val="WorkExperience"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:p><w:r><w:t>Position: [Job Title] at [Company]</w:t></w:r></w:p>
+        <w:p><w:r><w:t>Location: [Location]</w:t></w:r></w:p>
+        <w:p><w:r><w:t>Duration: [Start Date] - [End Date]</w:t></w:r></w:p>
+        <w:p><w:r><w:t>- Responsibilities:</w:t></w:r></w:p>
+        <w:p><w:r><w:t>• [Responsibility 1]</w:t></w:r></w:p>
+        <w:p><w:r><w:t>• [Responsibility 2]</w:t></w:r></w:p>
+      </w:sdtContent>
+    </w:sdt>
+
+    <!-- Repeat similar structures for other sections -->
+    
+    <!-- Education Section -->
+    <w:p>
+      <w:r><w:t># Education</w:t></w:r>
+    </w:p>
+    <w:sdt>
+      <w:sdtPr>
+        <w:alias w:val="Education"/>
+        <w:tag w:val="Education"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:p><w:r><w:t>Degree: [Degree Name] from [Institution]</w:t></w:r></w:p>
+        <w:p><w:r><w:t>Location: [Location]</w:t></w:r></w:p>
+        <w:p><w:r><w:t>Duration: [Start Date] - [End Date]</w:t></w:r></w:p>
+      </w:sdtContent>
+    </w:sdt>
+  </w:body>
+</w:document> 
