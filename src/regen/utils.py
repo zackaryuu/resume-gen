@@ -5,7 +5,7 @@ from regen import PRESET_PATH
 from zuu.util_tempdir import tempdir_op
 import toml
 import yaml
-from zs.kvstore import parse_document
+from zs.api.kvstore import parse_document
 
 @cache
 def load_mod(preset):
