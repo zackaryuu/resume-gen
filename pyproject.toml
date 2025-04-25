@@ -1,6 +1,6 @@
 [project]
 name = "zs.resume-gen"
-version = "0.2.0"
+version = "0.2.1"
 description = "quick resume generator"
 authors = [
     { name = "ZackaryW", email = "36378555+ZackaryW@users.noreply.github.com" }

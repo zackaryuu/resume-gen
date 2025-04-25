@@ -55,7 +55,6 @@ Position: $exp.position$ at $exp.organization$
 Location: $exp.location$  
 Duration: $exp.datestart$ - $exp.dateend$  
 $if(exp.items)$
-- Responsibilities:
 $for(exp.items)$
 - $exp.items$
 $endfor$
@@ -67,7 +66,6 @@ $if(expl)$
 $for(expl)$
 Title: $expl.title$  
 $if(expl.items)$
-- Honors:
 $for(expl.items)$
 - $expl.items.name$: $expl.items.des$ ($expl.items.location$, $expl.items.year$)
 $endfor$
